@@ -168,6 +168,15 @@ li img{
     width: 100%;
 }
 
+#profile{
+    display: flex;
+    align-items: center;
+}
+#profile img{
+    width: 150px;
+    border-radius: 50%;
+}
+
 footer{
     position: fixed;
     bottom: 0;
@@ -179,6 +188,7 @@ footer{
     font-size: .9em;
 }
 
+/* Responsive Style */
 @media screen and (min-width:800px){
     body{
         grid-template-columns: 1fr 3fr;
@@ -197,6 +207,14 @@ footer{
     h1{
         text-align: left;
     }
+    #about{
+        display: flex;
+        flex-direction: row;
+    }
+    #about section{
+        width: 45%;
+    }
+
     .carousel{
         height: 75vh;
     }
@@ -206,5 +224,8 @@ footer{
     .gallery-item{
         width: 45%;
         margin: .5rem;
+    }
+    #profile img{
+        width: 200px;
     }
 }
